@@ -6,6 +6,9 @@
 # target
 */target/*
 
+*/.metadata/*
+*/.settings/*
+
 # BlueJ files
 *.ctxt
 
