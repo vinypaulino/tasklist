@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8"/>
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+			<!-- Bootstrap CSS -->
+	<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous" />
+</h:head>
+<h:body>
+	<h:form>
+		<p:growl id="messages" showDetail="true" />
+		<p:toolbar>
+			<f:facet name="left">
+				<p:outputPanel>Sienge Calculo de Frete</p:outputPanel>
+			</f:facet>
+			<f:facet name="right">
+				<p:menuButton value="Menu">
+					<p:menuitem value="Veiculos" action="veiculo?faces-redirect=true"
+						update="messages" icon="ui-icon-plusthick" />
+					<p:separator />
+					<p:menuitem value="Calcular Frete"
+						action="calculo?faces-redirect=true" update="messages"
+						icon="ui-icon-calculator" />
+				</p:menuButton>
+			</f:facet>
+		</p:toolbar>
+	</h:form>
+	<div id="cabecalho">
+		<h1>
+			<ui:insert name="titulo"></ui:insert>
+		</h1>
+	</div>
+	<div id="conteudo">
+		<ui:insert name="conteudo"></ui:insert>
+	</div>
+
+
+</h:body>
+
+
+
+
+</html>
