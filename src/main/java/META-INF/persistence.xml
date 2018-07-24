@@ -7,8 +7,8 @@
 		<!-- Implementação do JPA, no nosso caso Hibernate -->
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<!-- Aqui são listadas todas as entidades -->
-		<class>br.com.vinipaulino.modelo.Veiculo</class>
-		<class>br.com.vinipaulino.modelo.Configuracao</class>
+		<class>br.com.vinipaulino.modelo.Task</class>
+
 		<properties>
 			<!-- Propriedades JDBC -->
 			<property name="javax.persistence.jdbc.driver"
